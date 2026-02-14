@@ -1,128 +1,176 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff7f9;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: white;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+.logo {
+    display: flex;
+    align-items: center; 
+    gap: 10px;          
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4A3B37;
+}
+
+.logo-img {
+    width: 40px;        
+    height: auto;       
+    display: inline-block;
+}
+.navbar nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #555;
+}
+
+.navbar nav a.active {
+  color: #e07a8d;
+}
+
+.shop {
+  padding: 70px 8%;
+  text-align: center;
+  background: #faf6f3;
+}
+
+.shop h1 {
+  font-size: 46px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #888;
+  margin: 10px auto 45px;
+  font-size: 15px;
+  max-width: 520px;
+}
+
 /* Filters */
 .filters {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin: 60px 0 50px;
+  margin-bottom: 55px;
 }
 
-.filter-btn {
-  padding: 10px 26px;
-  border-radius: 25px;
+.filters button {
   border: none;
-  background: #e7ded9;
+  padding: 11px 26px;
+  border-radius: 30px;
+  margin: 6px;
+  background: #f2e3dd;
+  color: #555;
   cursor: pointer;
   font-size: 14px;
-  color: #555;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
-.filter-btn:hover {
-  background: #d9b4be;
+.filters button.active,
+.filters button:hover {
+  background: #e07a8d;
   color: #fff;
   transform: translateY(-2px);
 }
 
-.filter-btn.active {
-  background: #c97c8c;
-  color: white;
-}
-
-/* Products Grid */
+/* Products */
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 35px;
-  padding: 0 8% 80px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
 }
 
 /* Card */
 .card {
-  background: #fdfaf8;
-  border-radius: 20px;
+  background: #fff;
+  border-radius: 26px;
   overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
-  transition: all .4s ease;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.06);
+  transition: all 0.45s ease;
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-14px);
 }
 
 /* Image */
-.card-img {
-  position: relative;
-  overflow: hidden;
-}
-
 .card img {
   width: 100%;
-  height: 260px;
+  height: 270px;
   object-fit: cover;
-  transition: transform .5s ease;
+  transition: transform 0.6s ease;
 }
 
 .card:hover img {
   transform: scale(1.08);
 }
 
-/* Badge */
-.badge {
-  position: absolute;
-  top: 18px;
-  left: 18px;
-  background: #fff;
-  padding: 6px 16px;
-  border-radius: 30px;
-  font-size: 12px;
-  font-weight: 600;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
-
-/* Card Content */
+/* Content */
 .card-content {
-  padding: 24px;
+  padding: 22px 24px;
+  text-align: left;
 }
 
-.card-content h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
+.card h3 {
   margin-bottom: 6px;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
 }
 
-.card-content p {
+.card p {
   font-size: 14px;
   color: #777;
+  line-height: 1.5;
 }
 
-/* Price & Button */
-.price-cart {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 18px;
-}
-
+/* Price */
 .price {
-  font-size: 17px;
+  margin: 18px 0;
   font-weight: 600;
+  font-size: 16px;
   color: #333;
 }
 
-.add-btn {
-  background: #c97c8c;
-  color: white;
-  border: none;
-  padding: 9px 22px;
+/* Button */
+.card button {
+  width: 100%;
+  padding: 13px;
   border-radius: 25px;
-  cursor: pointer;
+  border: none;
+  background: #e07a8d;
+  color: white;
   font-size: 14px;
-  transition: all .3s ease;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.add-btn:hover {
-  background: #b56a7a;
+.card button:hover {
+  background: #c86576;
   transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .shop {
+    padding: 40px 6%;
+  }
+
+  .shop h1 {
+    font-size: 36px;
+  }
 }

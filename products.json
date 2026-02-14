@@ -5,7 +5,7 @@
     "description": "Three layers of moist red velvet",
     "price": 42,
     "category": "cakes",
-    "image": "https://images.unsplash.com/photo-1605472569955-8c59e6b99f8e"
+    "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307"
   },
   {
     "id": 2,
@@ -84,7 +84,7 @@
     "title": "Blueberry Muffin",
     "description": "Soft muffin loaded with blueberries",
     "price": 14,
-    "category": "muffins",
+    "category": "cupcake",
     "image": "https://images.unsplash.com/photo-1617196038943-d0b59f5b57d4"
   },
   {

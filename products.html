@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>La Douceur | Shop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="p.css">
 </head>
 <body>
@@ -23,13 +22,20 @@
   <div class="user">Hi, <span id="username"></span></div>
 </header>
 
-<section class="filters">
-  <button class="filter-btn active" data-category="all">All</button>
-  <button class="filter-btn" data-category="cakes">Cakes</button>
-  <button class="filter-btn" data-category="cupcakes">Cupcakes</button>
-  <button class="filter-btn" data-category="macarons">Macarons</button>
-</section>
 
+<section class="shop">
+  <h1>Our Sweet Collection</h1>
+  <p class="subtitle">Each creation is a masterpiece of flavor and artistry.</p>
+
+  <div class="filters">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="cake">Cakes</button>
+    <button data-filter="cupcake">Cupcakes</button>
+    <button data-filter="macaron">Macarons</button>
+  </div>
+
+  <div class="products" id="products"></div>
+</section>
 <section class="products" id="products"></section>
 <script src="assets/js/script.js"></script>
 
