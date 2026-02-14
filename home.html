@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>La Douceur | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">🍰 La Douceur</div>
+  <nav>
+    <a class="active">Home</a>
+    <a href="products.html">Shop</a>
+    <a href="cart.html">Cart <span id="cartCount"></span></a>
+  </nav>
+  <div class="user">Hi, <span id="username"></span></div>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <span class="subtitle">ARTISAN DESSERTS & CAKES</span>
+    <h1>
+      Life is Short,<br>
+      <span>Eat Dessert</span> First.
+    </h1>
+    <p>
+      Indulge in handcrafted pastries and cakes —
+      made fresh daily with love and the finest ingredients.
+    </p>
+    <a href="products.html" class="btn">Shop Now →</a>
+  </div>
+</section>
+<section class="why-us">
+  <h2>Why Choose La Douceur?</h2>
+  <p class="subtitle">
+    We bring the finest French patisserie traditions to every bite.
+  </p>
+
+  <div class="features">
+    <div class="feature-card">
+      <div class="icon">⭐</div>
+      <h3>Artisan Quality</h3>
+      <p>Every item handcrafted by our master pastry chefs</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon">❤</div>
+      <h3>Made with Love</h3>
+      <p>Using only the finest organic ingredients</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon">🏆</div>
+      <h3>Award Winning</h3>
+      <p>Recognized by top culinary publications</p>
+    </div>
+  </div>
+</section>
+<div class="hero-card">
+            <h1>Ready to Treat Yourself?</h1>
+            <p>Browse our curated collection of pastries, cakes, and sweet creations.</p>
+            <a href="#" class="cta-button">Explore Our Menu <span>→</span></a>
+        </div>
+<script>
+  document.getElementById("username").innerText =
+    localStorage.getItem("user") || "Guest";
+
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  document.getElementById("cartCount").innerText = cart.length;
+</script>
+
+</body>
+</html>

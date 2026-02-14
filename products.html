@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>La Douceur | Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">🍰 La Douceur</div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="products.html"class="active">Shop</a>
+    <a href="cart.html">Cart <span id="cartCount"></span></a>
+  </nav>
+  <div class="user">Hi, <span id="username"></span></div>
+</header>
+
+<section class="filters">
+  <button class="filter-btn active" data-category="all">All</button>
+  <button class="filter-btn" data-category="cakes">Cakes</button>
+  <button class="filter-btn" data-category="cupcakes">Cupcakes</button>
+  <button class="filter-btn" data-category="macarons">Macarons</button>
+</section>
+
+<section class="products" id="products"></section>
+
+<script src="products.js"></script>
+</body>
+</html>
