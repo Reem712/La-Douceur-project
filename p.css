@@ -1,144 +1,155 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background: #fff7f9;
+  font-family: "Poppins", sans-serif;
+  background: #fdf8f6;
+  color: #4a3b37;
 }
 
-/* Navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px 50px;
-  background: white;
+  align-items: center;
+  padding: 22px 8%;
+  background: #fff;
   position: sticky;
   top: 0;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  z-index: 1000;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
 }
+
 .logo {
-    display: flex;
-    align-items: center; 
-    gap: 10px;          
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #4A3B37;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .logo-img {
-    width: 40px;        
-    height: auto;       
-    display: inline-block;
-}
-.navbar nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #555;
+  width: 38px;
 }
 
+.navbar nav a {
+  margin: 0 14px;
+  text-decoration: none;
+  color: #777;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover,
 .navbar nav a.active {
   color: #e07a8d;
 }
 
+.user {
+  font-size: 14px;
+  color: #777;
+}
+
+
 .shop {
-  padding: 70px 8%;
+  padding: 80px 8%;
   text-align: center;
   background: #faf6f3;
 }
 
 .shop h1 {
-  font-size: 46px;
   font-family: 'Playfair Display', serif;
-  margin-bottom: 10px;
+  font-size: 48px;
+  margin-bottom: 12px;
 }
 
 .subtitle {
-  color: #888;
-  margin: 10px auto 45px;
+  color: #9a8f8b;
   font-size: 15px;
-  max-width: 520px;
+  margin-bottom: 50px;
 }
 
-/* Filters */
+
 .filters {
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 }
 
 .filters button {
   border: none;
-  padding: 11px 26px;
+  padding: 12px 28px;
   border-radius: 30px;
   margin: 6px;
-  background: #f2e3dd;
-  color: #555;
+  background: #f3e6e2;
+  color: #6e5f5b;
   cursor: pointer;
   font-size: 14px;
   transition: all 0.3s ease;
 }
 
-.filters button.active,
 .filters button:hover {
-  background: #e07a8d;
-  color: #fff;
-  transform: translateY(-2px);
+  background: #eac9d1;
 }
 
-/* Products */
+.filters button.active {
+  background: #e07a8d;
+  color: white;
+  box-shadow: 0 5px 15px rgba(224,122,141,0.4);
+}
+
+
+
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
 }
 
-/* Card */
+
 .card {
   background: #fff;
-  border-radius: 26px;
+  border-radius: 25px;
   overflow: hidden;
-  box-shadow: 0 18px 45px rgba(0,0,0,0.06);
-  transition: all 0.45s ease;
-}
-
-.card:hover {
-  transform: translateY(-14px);
-}
-
-/* Image */
-.card img {
-  width: 100%;
-  height: 270px;
-  object-fit: cover;
-  transition: transform 0.6s ease;
-}
-
-.card:hover img {
-  transform: scale(1.08);
-}
-
-/* Content */
-.card-content {
-  padding: 22px 24px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+  transition: all 0.4s ease;
   text-align: left;
 }
 
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+}
+
+.card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.card:hover img {
+  transform: scale(1.07);
+}
+
+.card-content {
+  padding: 24px;
+}
+
 .card h3 {
-  margin-bottom: 6px;
-  font-size: 20px;
   font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  margin-bottom: 8px;
 }
 
 .card p {
   font-size: 14px;
-  color: #777;
-  line-height: 1.5;
+  color: #888;
+  line-height: 1.6;
 }
 
-/* Price */
 .price {
   margin: 18px 0;
   font-weight: 600;
@@ -146,7 +157,6 @@ body {
   color: #333;
 }
 
-/* Button */
 .card button {
   width: 100%;
   padding: 13px;
@@ -156,21 +166,10 @@ body {
   color: white;
   font-size: 14px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .card button:hover {
   background: #c86576;
   transform: translateY(-2px);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .shop {
-    padding: 40px 6%;
-  }
-
-  .shop h1 {
-    font-size: 36px;
-  }
 }
