@@ -21,8 +21,8 @@ body {
 }
 .logo {
     display: flex;
-    align-items: center; /* لجعل الصورة والنص على خط واحد */
-    gap: 10px;           /* مسافة بسيطة بين الصورة والكلمة */
+    align-items: center; 
+    gap: 10px;          
     font-family: 'Playfair Display', serif;
     font-size: 24px;
     font-weight: bold;
@@ -30,8 +30,8 @@ body {
 }
 
 .logo-img {
-    width: 40px;        /* يمكنكِ تصغير أو تكبير الحجم من هنا */
-    height: auto;       /* للحفاظ على أبعاد الصورة */
+    width: 40px;        
+    height: auto;       
     display: inline-block;
 }
 .navbar nav a {
@@ -44,7 +44,6 @@ body {
   color: #e07a8d;
 }
 
-/* Hero */
 .hero {
   height: 90vh;
   background:
@@ -205,7 +204,6 @@ body {
   color: #777;
   line-height: 1.6;
 }
-/* السكشن الرئيسي (البطاقة المركزية) */
 .hero-section {
     flex: 1;
     display: flex;
@@ -215,7 +213,7 @@ body {
 }
 
 .hero-card {
-    background-color: #F0E2E4; /* اللون الوردي الباهت جداً */
+    background-color: #F0E2E4; 
     padding: 80px 40px;
     border-radius: 40px;
     text-align: center;
@@ -256,7 +254,6 @@ body {
     margin-left: 10px;
 }
 
-/* الفوتر */
 footer {
     text-align: center;
     padding: 30px;
@@ -266,11 +263,10 @@ footer {
 
 
 
-/* priducts */
+/* products */
 
 
 /* cart */
-
 /* Title */
 .cart-title {
   font-family: 'Playfair Display', serif;
@@ -339,7 +335,7 @@ footer {
   background: #e7b9bf;
 }
 
-/* Summary */
+
 .cart-summary {
   margin-top: 30px;
   padding-top: 20px;
@@ -358,7 +354,6 @@ footer {
   font-size: 20px;
 }
 
-/* Checkout Button */
 .cart-summary button {
   width: 100%;
   margin-top: 20px;

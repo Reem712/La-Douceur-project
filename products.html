@@ -5,8 +5,10 @@
   <title>La Douceur | Shop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/p.css"></head>
+  <link rel="stylesheet" href="p.css">
+</head>
 <body>
+
 
 <header class="navbar">
  <div class="logo">
@@ -15,17 +17,13 @@
 </div>
   <nav>
     <a href="home.html">Home</a>
-    <a href="products.html"class="active">Shop</a>
-    <a href="cart.html">Cart <span id="cartCount"></span></a>
+    <a href="products.html">Shop</a>
+    <a href="cart.html"class="active">Cart <span id="cartCount"></span></a>
   </nav>
   <div class="user">Hi, <span id="username"></span></div>
 </header>
 
 <section class="filters">
-  <h1>Our Sweet Collection</h1>
-  
-  <p class="subtitle">Each creation is a masterpiece of flavor and artistry.</p>
-
   <button class="filter-btn active" data-category="all">All</button>
   <button class="filter-btn" data-category="cakes">Cakes</button>
   <button class="filter-btn" data-category="cupcakes">Cupcakes</button>
@@ -33,10 +31,8 @@
 </section>
 
 <section class="products" id="products"></section>
-
-<script src="assets/js/products.js"></script>
 <script src="assets/js/script.js"></script>
 
-
+<script src="products.js"></script>
 </body>
 </html>
