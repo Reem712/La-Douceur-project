@@ -34,7 +34,7 @@ body {
 .hero {
   height: 90vh;
   background:
-    linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,0.5)),
+    linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,0.6)),
  url("assets/imgs/hero-dessert-vvv6j3VP.jpg");
   background-size: cover;
   display: flex;
@@ -83,6 +83,18 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
   gap: 30px;
+}
+.filters{
+    padding: 60px;
+  text-align: center;
+}
+.filters h1 {
+  font-size: 48px;
+}
+
+.subtitle {
+  color: #777;
+  margin: 10px 0 40px;
 }
 
 .card {
@@ -179,6 +191,15 @@ body {
   color: #777;
   line-height: 1.6;
 }
+/* السكشن الرئيسي (البطاقة المركزية) */
+.hero-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 .hero-card {
     background-color: #F0E2E4; /* اللون الوردي الباهت جداً */
     padding: 80px 40px;
@@ -221,102 +242,17 @@ body {
     margin-left: 10px;
 }
 
+/* الفوتر */
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 13px;
+    color: #A69794;
+}
+
 
 
 /* priducts */
-
-/* Filters */
-.filters {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 40px 0;
-}
-
-.filter-btn {
-  padding: 8px 20px;
-  border-radius: 20px;
-  border: none;
-  background: #e7ded9;
-  cursor: pointer;
-  transition: .3s;
-}
-
-.filter-btn.active {
-  background: #c97c8c;
-  color: white;
-}
-
-/* Products Grid */
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  padding: 0 8% 60px;
-}
-
-/* Card */
-.card {
-  background: #fdfaf8;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-  transition: .3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card-img {
-  position: relative;
-}
-
-.card img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
-
-.badge {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  background: #fff;
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.card-content {
-  padding: 20px;
-}
-
-.card-content h3 {
-  font-family: 'Playfair Display', serif;
-  margin-bottom: 8px;
-}
-
-.price-cart {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 15px;
-}
-
-.price {
-  font-weight: 600;
-}
-
-.add-btn {
-  background: #c97c8c;
-  color: white;
-  border: none;
-  padding: 8px 18px;
-  border-radius: 20px;
-  cursor: pointer;
-}
 
 
 /* cart */

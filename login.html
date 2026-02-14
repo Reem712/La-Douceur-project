@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Login</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Douceur | Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-<body class="center">
-  <div class="login-box">
-    <h2>Dessert Store 🍰</h2>
-    <input type="text" id="username" placeholder="Enter your name">
-    <button onclick="login()">Login</button>
-  </div>
+<body class="login-page">
 
-  <script src="js/login.js"></script>
+    <div class="login-container">
+        <div class="login-logo">
+            <div class="icon-circle">🎂</div>
+            <h1>La Douceur</h1>
+            <p class="subtitle">Welcome to our sweet world</p>
+        </div>
+
+        <div class="login-card">
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="userName">Your Name</label>
+                    <input type="text" id="userName" placeholder="Enter your name..." required>
+                </div>
+                
+               <a href="home.html" style="text-decoration: none;">
+    <button type="submit" class="login-btn">Enter the Bakery</button>
+</a>
+            </form>
+        </div>
+
+        <footer class="login-footer">
+            Crafted with love & butter 🧁
+        </footer>
+    </div>
+
+    <script>
+        
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('userName').value;
+            localStorage.setItem('user', name); // حفظ الاسم
+            window.location.href = 'home.html';
+            window.location.href = 'cart.html'; // الانتقال للرئيسية
+             // الانتقال للرئيسية
+        });
+    </script>
 </body>
 </html>
