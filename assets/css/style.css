@@ -19,7 +19,21 @@ body {
   top: 0;
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
+.logo {
+    display: flex;
+    align-items: center; /* لجعل الصورة والنص على خط واحد */
+    gap: 10px;           /* مسافة بسيطة بين الصورة والكلمة */
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4A3B37;
+}
 
+.logo-img {
+    width: 40px;        /* يمكنكِ تصغير أو تكبير الحجم من هنا */
+    height: auto;       /* للحفاظ على أبعاد الصورة */
+    display: inline-block;
+}
 .navbar nav a {
   margin: 0 10px;
   text-decoration: none;

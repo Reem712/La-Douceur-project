@@ -8,7 +8,7 @@ const cartCounter = document.getElementById("cart-count");
 
 async function fetchProducts() {
   try {
-    const response = await fetch("products.json");
+    const response = await fetch("assets/json/asproducts.json");
     const data = await response.json();
 
     productsData = data.map(item => ({
